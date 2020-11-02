@@ -87,3 +87,11 @@ select:focus {
     outline: dashed rgb(219, 125, 2) 3px;
 }
 
+@media (max-width: 540px) {
+    #survey-form {
+        width: 85%;
+        padding: 10px 15px;
+        background: unset;
+    }
+}
+
