@@ -1,0 +1,89 @@
+body {
+    font-size: larger;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255,255,255,.2)), url(https://www.cbs42.com/wp-content/uploads/sites/81/2020/03/coronavirus-background.jpg)
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;  
+}
+
+.form-question {
+    display: inline-block;
+    padding: 20px 0 5px 0;    
+}
+
+.form-field {
+    width: 100%;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-size: 18px;  
+}
+
+textarea.form-field {
+    height: auto;
+}
+
+.form-choosable {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+#survey-form {
+    width: 50%;
+    padding: 25px 35px 45px 35px;
+    font-size: 1.2em;
+    line-height: 1.2;
+    background: linear-gradient(rgba(177, 7, 7, 0.3), rgba(177, 7, 7, 0.3));
+    border-radius: 10px;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    border: solid black 1px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.66));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(82, 0, 0);
+    margin-top: 16px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#submit:hover, 
+#submit:focus {
+    background: rgb(219, 82, 2);
+    color: white;  
+}
+
+input.form-field, 
+textarea.form-field {
+    width: calc(100% - 8px);
+}
+
+.form-choosable input {
+    margin-right: 10px;
+}
+
+.form-choosable label:focus, 
+.form-field:focus, 
+textarea:focus, 
+select:focus {
+    outline: dashed rgb(219, 125, 2) 3px;
+}
+

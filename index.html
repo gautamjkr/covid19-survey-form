@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 id="title">
+        Covid-19 Survey Form
+    </h1>
+
+    <p id="description">
+        Thank you for taking time to contribute to the society
+    </p>
+
+    <div class="form-content">
+
+        <form action="" id="survey-form">
+
+            <label id="name-label" for="name">
+                <span class="form-question">Name</span>
+                <input id="name" type="text" placeholder="Enter your name" class="form-field" required>
+            </label>
+
+            <label id="email-label" for="email">
+                <span class="form-question">Email</span>
+                <input id="email" type="email" placeholder="Enter your email" class="form-field" required>
+            </label>
+
+            <label id="number-label" for="number">
+                <span class="form-question">Age</span>
+                <input id="number" type="number" min="10" max="99" placeholder="Enter your age" class="form-field">
+            </label>
+
+            <label for="dropdown" class="form-question">Which gender do you identify yourself with?</label>
+
+            <select name="Gender" id="dropdown" class="form-field" required>
+                <option disabled selected value>Select your gender</option>
+                <option value="male">Female</option>
+                <option value="female">Male</option>
+                <option value="other">Other</option>
+            </select>
+
+            <span class="form-question">Tell us about your current covid status</span>
+
+            <div class="form-choosable">
+                <label for="status-positive">
+                    <input id="status-positive" value="positive" type="radio" name="status">Positive
+                </label>
+
+                <label for="status-negative">
+                    <input id="status-negative" value="negative" type="radio" name="status">Negative
+                </label>
+
+                <label for="status-never-tested">
+                    <input id="status-never-tested" value="never tested" type="radio" name="status">Never Tested
+                </label>
+
+                <label for="status-unknown">
+                    <input id="status-unknown" value="unknown" type="radio" name="status">Unknown
+                </label>
+            </div>
+
+            <span class="form-question">What symptoms you are facing at this point in time?</span>
+
+            <div class="form-choosable">
+                <label for="fever">
+                    <input id="fever" type="checkbox" value="fever" name="symptoms">Fever
+                </label>
+
+                <label for="cough">
+                    <input id="cough" type="checkbox" value="cough" name="symptoms">Cough
+                </label>
+
+                <label for="shortness-of-breath">
+                    <input id="shortness-of-breath" type="checkbox" value="shortness-of-breath"
+                        name="symptoms">Shortness of breath
+                </label>
+
+                <label for="soar-throat">
+                    <input id="soar-throat" type="checkbox" value="soar-throat" name="symptoms">Soar Throat
+                </label>
+            </div>
+
+            <span class="form-question">Anything else you want to share about the current covid19 situation in your locality?</span>
+
+            <textarea name="suggestions" id="suggestions" cols="30" rows="10" class="form-field"></textarea>
+
+            <button id="submit" type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
